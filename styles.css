@@ -1,17 +1,34 @@
-/* Define color scheme variables */
+/* Basic Reset */
+body, h1, h2, p, ul, li, header, section, nav, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Light Theme Variables */
 :root {
     --background-color: #fff;
     --text-color: #333;
     --nav-bg-color: #f8f8f8;
-    --section-bg-color: #f8f8f8;
+    --button-bg-color: #333;
+    --button-text-color: white;
+    --button-hover-bg-color: #555;
+    --section-bg-color: #f4f4f4;
+    --footer-bg-color: #fff;
+    --border-color: #ccc;
 }
 
-/* Dark theme variables */
+/* Dark Theme Variables */
 [data-theme="dark"] {
     --background-color: #333;
     --text-color: #fff;
     --nav-bg-color: #242424;
+    --button-bg-color: #555;
+    --button-text-color: #ddd;
+    --button-hover-bg-color: #777;
     --section-bg-color: #424242;
+    --footer-bg-color: #2c2c2c;
+    --border-color: #444;
 }
 
 body {
@@ -25,19 +42,86 @@ body {
 header, footer {
     text-align: center;
     padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header p {
+    font-size: 18px;
+    color: var(--text-color);
 }
 
 nav {
     background-color: var(--nav-bg-color);
-    text-align: center;
     padding: 10px 0;
-    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a, nav ul li button {
+    text-decoration: none;
+    color: var(--button-text-color);
+    background-color: var(--button-bg-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li button:hover {
+    background-color: var(--button-hover-bg-color);
 }
 
 section {
-    margin-bottom: 20px;
+    margin: 20px 0;
     padding: 20px;
     background-color: var(--section-bg-color);
 }
 
-/* Rest of your styles here */
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p, li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input[type=email], input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+footer {
+    font-size: 16px;
+    color: var(--text-color);
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--footer-bg-color);
+}
