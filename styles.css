@@ -1,15 +1,24 @@
-/* Basic Reset */
-body, h1, h2, p, ul, li, header, section, nav, footer {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Define color scheme variables */
+:root {
+    --background-color: #fff;
+    --text-color: #333;
+    --nav-bg-color: #f8f8f8;
+    --section-bg-color: #f8f8f8;
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+    --background-color: #333;
+    --text-color: #fff;
+    --nav-bg-color: #242424;
+    --section-bg-color: #424242;
 }
 
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean and modern font similar to Plain Text Sports */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
-    color: #333; /* Dark grey text for good readability */
-    background-color: #fff; /* White background */
+    color: var(--text-color);
+    background-color: var(--background-color);
     padding: 20px;
 }
 
@@ -18,73 +27,17 @@ header, footer {
     padding: 20px 0;
 }
 
-header h1 {
-    margin-bottom: 5px; /* Small space below the main title */
-    font-size: 24px; /* Larger font for prominence */
-}
-
-header p {
-    font-size: 18px;
-    color: #555; /* Lighter shade for less emphasis */
-}
-
 nav {
-    background-color: #f8f8f8; /* Very light grey for the navigation bar */
+    background-color: var(--nav-bg-color);
     text-align: center;
     padding: 10px 0;
-    margin-bottom: 20px; /* Adds space between nav and content */
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline; /* Aligns links in a row */
-    margin-right: 20px; /* Spaces out the links */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
+    margin-bottom: 20px;
 }
 
 section {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #f8f8f8; /* Light grey background for sections */
+    background-color: var(--section-bg-color);
 }
 
-h2 {
-    font-size: 22px; /* Distinct size for section headings */
-    margin-bottom: 10px; /* Space below headings */
-}
-
-p, li {
-    font-size: 16px; /* Adequate size for readability */
-    margin-bottom: 10px; /* Consistent space between paragraphs and list items */
-}
-
-input[type=email], input[type=submit] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px; /* Space above inputs */
-    border: 1px solid #ccc;
-    border-radius: 4px; /* Rounded corners */
-}
-
-input[type=submit] {
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #555; /* Darker on hover for feedback */
-}
-
-footer {
-    font-size: 16px;
-    color: #666; /* Light grey for a softer look */
-}
+/* Rest of your styles here */
