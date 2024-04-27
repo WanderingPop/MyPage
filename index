@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Kaffer - OT Cybersecurity Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chris Kaffer</h1>
+        <p>OT Cybersecurity Engineer</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#journey">My Journey</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome! I’m Chris Kaffer, an OT cybersecurity engineer with over [X years] of experience specializing in the protection of industrial control systems. I have a deep passion for enhancing security measures and ensuring the safe operation of essential services.</p>
+    </section>
+    <section id="journey">
+        <h2>My Journey</h2>
+        <p>My career in cybersecurity began with a foundational degree in [Your Degree], followed by certifications such as [Relevant Certifications]. Each step of my career has been guided by a commitment to learning and adapting in the rapidly evolving field of cybersecurity.</p>
+        <ul>
+            <li>Step 1: Education and initial training.</li>
+            <li>Step 2: Early career roles and responsibilities.</li>
+            <li>Step 3: Advanced certifications and specialization.</li>
+            <li>Step 4: Current role and achievements.</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Over the years, I've worked on numerous projects that have not only tested my skills but have significantly contributed to the security of numerous organizations. Below are a few highlights:</p>
+        <ul>
+            <li>Project 1: Description of what the project involved and its impact.</li>
+            <li>Project 2: Description of another project and what was achieved.</li>
+        </ul>
+    </section>
+    <footer>
+        <h2>Contact</h2>
+        <p>For more information or to get in touch, please contact me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+    </footer>
+</body>
+</html>
